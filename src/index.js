@@ -74,10 +74,15 @@ function get2ndAnd3rd( myArray ){
   return newArray;
 }
 
+// myArray is an array of numbers
+// return a new array which has all items in myArray incremented by one
+// myArray should remain unchanged
+
 function mapper( myArray ){
-  // myArray is an array of numbers
-  // return a new array which has all items in myArray incremented by one
-  // myArray should remain unchanged
+
+  let newArray = myArray.map(item => item + 1)
+
+  return newArray;
 }
 
 function wordLengths( words ){
