@@ -44,6 +44,13 @@ const isDivisibleBy = (divider1, divider2, number) => number % divider1 === 0 ||
 // do not use if/else or ternary
 const evens = (a, b, c, d) => a % 2 === 0 && b % 2 === 0 && c % 2 === 0 && d % 2 === 0
 
+
+
+// words is an array which contains an odd number of strings
+// return a new array containing only the middle word
+// the words array should no longer contain the middle word
+// hint: splice
+
 const removeMiddle = words => {
 
 let midNum = (words.length / 2);
@@ -54,17 +61,17 @@ return midWord;
 
 } 
 
-  // words is an array which contains an odd number of strings
-  // return a new array containing only the middle word
-  // the words array should no longer contain the middle word
-  // hint: splice
 
+// myArray is an array of numbers
+// return an array containing the 2nd and 3rd items from myArray
+// myArray should remain unchanged
+// hint: slice
 
 function get2ndAnd3rd( myArray ){
-  // myArray is an array of numbers
-  // return an array containing the 2nd and 3rd items from myArray
-  // myArray should remain unchanged
-  // hint: slice
+
+  let newArray = myArray.slice(1, 3);
+
+  return newArray;
 }
 
 function mapper( myArray ){
