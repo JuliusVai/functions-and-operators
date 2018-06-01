@@ -36,19 +36,13 @@ const strictEqual = (a, b, c) => a === b && a === c
 
 const smaller = (a, b) => b >= a ? true : "smaller"
  
-function isDivisibleBy(divider1, divider2, number){
+const isDivisibleBy = (divider1, divider2, number) => number % divider1 === 0 || number % divider2 === 0
 
-  return number % divider1 === 0 || number % divider2 === 0
 
-  // if number is divisible by divider1 or divider2 return true or false otherwise
-  // do not use if/else or ternary
-}
-
-function evens(){
-  // this function is passed 4 numbers
-  // return true if all numbers are even or false otherwise
-  // do not use if/else or ternary
-}
+// this function is passed 4 numbers
+// return true if all numbers are even or false otherwise
+// do not use if/else or ternary
+const evens = (a, b, c, d) => a % 2 === 0 && b % 2 === 0 && c % 2 === 0 && d % 2 === 0
 
 function removeMiddle( words ){
   // words is an array which contains an odd number of strings
