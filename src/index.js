@@ -36,8 +36,10 @@ const strictEqual = (a, b, c) => a === b && a === c
 
 const smaller = (a, b) => b >= a ? true : "smaller"
  
-
 function isDivisibleBy(divider1, divider2, number){
+
+  return number % divider1 === 0 || number % divider2 === 0
+
   // if number is divisible by divider1 or divider2 return true or false otherwise
   // do not use if/else or ternary
 }
