@@ -44,12 +44,21 @@ const isDivisibleBy = (divider1, divider2, number) => number % divider1 === 0 ||
 // do not use if/else or ternary
 const evens = (a, b, c, d) => a % 2 === 0 && b % 2 === 0 && c % 2 === 0 && d % 2 === 0
 
-function removeMiddle( words ){
+const removeMiddle = words => {
+
+let midNum = (words.length / 2);
+
+let midWord = words.splice(midNum, 1);
+
+return midWord;
+
+} 
+
   // words is an array which contains an odd number of strings
   // return a new array containing only the middle word
   // the words array should no longer contain the middle word
   // hint: splice
-}
+
 
 function get2ndAnd3rd( myArray ){
   // myArray is an array of numbers
