@@ -201,7 +201,7 @@ test('Get numbers greater than 10', () => {
   expect(output).toEqual( expected );
 });
 
-test.only('Get even numbers', () => {
+test('Get even numbers', () => {
   const numbers = [ 22, 13, 73, 82, 4];
   const expected = [ 22, 82, 4 ];
 
@@ -209,12 +209,21 @@ test.only('Get even numbers', () => {
   expect(output).toEqual( expected );
 });
 
-test('Find the needle', () => {
+test.only('Find the needle', () => {
   const words = [ 'house', 'train', 'slide', 'needle', 'book' ];
-  const expected = 3;
-
+  
   const output = findTheNeedle( words );
+  const expected = 3;
+  
+  const output2 = findTheNeedle( words, "train" );
+  const expected2 = 1;
+
+  const output3 = findTheNeedle(words, "Julius");
+  const expected3 = "not found";
+
   expect(output).toEqual( expected );
+  expect(output2).toEqual( expected2 );
+  expect(output3).toEqual( expected3 );
 });
 
 test('Find largest number', () => {

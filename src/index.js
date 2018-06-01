@@ -113,9 +113,9 @@ function mapper( myArray ){
   // Apply formatter to each object in capitals array and
   // return an array of resulting sentences
 
-function cities( capitals, formatter ){
+function cities( capitals, fn ){
 
-  return capitals.map(city => formatter(city))
+  return capitals.map(fn)
   
 }
 
@@ -146,9 +146,15 @@ function even( numbers ){
 
 }
 
-function findTheNeedle( words ){
-  // words is an array of words
-  // return the index of the word 'needle'
+// words is an array of words
+// return the index of the word 'needle'
+
+function findTheNeedle( words, needle = 'needle' ){
+
+  const index = words.indexOf(needle)
+
+  return (index < 0) ? "not found" : index;
+
 }
 
 function findLargest( numbers ){
