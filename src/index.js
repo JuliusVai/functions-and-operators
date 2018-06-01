@@ -157,9 +157,13 @@ function findTheNeedle( words, needle = 'needle' ){
 
 }
 
+// numbers is an array of numbers
+// return the largest number from that array
+
 function findLargest( numbers ){
-  // numbers is an array of numbers
-  // return the largest number from that array
+
+  return Math.max(...numbers)
+
 }
 
 function addAllnumbers( numbers ) {

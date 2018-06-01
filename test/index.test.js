@@ -209,7 +209,7 @@ test('Get even numbers', () => {
   expect(output).toEqual( expected );
 });
 
-test.only('Find the needle', () => {
+test('Find the needle', () => {
   const words = [ 'house', 'train', 'slide', 'needle', 'book' ];
   
   const output = findTheNeedle( words );
@@ -226,7 +226,7 @@ test.only('Find the needle', () => {
   expect(output3).toEqual( expected3 );
 });
 
-test('Find largest number', () => {
+test.only('Find largest number', () => {
   const numbers = [ 3, 21, 88, 4, 36];
   const expected = 88;
 
