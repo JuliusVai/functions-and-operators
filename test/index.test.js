@@ -35,25 +35,25 @@ const {
   crazyMoney
 } = require('../src');
 
-test('Add', () => {
+test ('Add', () => {
   const result = add( 2, 3 );
 
   expect( result ).toEqual( 5 );
 });
 
-test('Multiply', () => {
+test ('Multiply', () => {
   const result = multiply( 4, 5, 3, 7 );
 
   expect( result ).toEqual( 420 );
 });
 
-test('Average', () => {
+test ('Average', () => {
   const result = average( 2.2, 1.68, 1.76, 1.54, 2 );
 
   expect( parseFloat( Number( result ).toFixed( 3 ) ) ).toEqual( 1.836 );
 });
 
-test('Remainder', () => {
+test ('Remainder', () => {
   const result = remainder( 17, 5 );
 
   expect( result ).toEqual( 2 );
@@ -65,7 +65,7 @@ test('Exponential', () => {
   expect( result ).toEqual( 2401 );
 });
 
-test('Lax equality ', () => {
+test.only ('Lax equality ', () => {
   const result = laxEquality( 10, "10" );
   expect( result ).toEqual( true );
 

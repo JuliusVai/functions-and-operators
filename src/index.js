@@ -1,33 +1,39 @@
 function add(a, b){
-  // add the two arguments and return the sum
   return a + b;
 }
 
-function multiply(){
-  // this function is passed 4 parameters
-  // multiply them and return the result
+function multiply(a, b, c, d){
+ return a * b * c * d;
 }
 
-function average(){
-  // this function is passed 5 heights in meters
-  // calculate their average and return it
+function average(a, b, c, d, e){
+  let total = a + b + c + d + e;
+  return total/arguments.length;
 }
 
-function remainder(){
+function remainder(a, b){
   // this function is passed 2 arguments
   // return the remainder of first
   // argument when divided by the second
+  let sum = a % b;
+  return sum;
+
 }
 
-function exponential(){
+function exponential(a, b){
   // this function is passed 2 arguments
   // return first argument to the power of second argument
   // hint: you may need to look up the exponention operator
+return a ** b;
+
 }
 
-function laxEquality(){
+function laxEquality(a, b){
   // this function is passed 2 arguments
   // return true if they are equal but not strictly equal
+
+  return (a == b)
+
 }
 
 function strictEqual(){
