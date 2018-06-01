@@ -42,9 +42,19 @@ function laxEquality(a, b){
 
 }
 
-function strictEqual(){
+function strictEqual(a, b, c){
   // function is passed 3 arguments
   // return true if they are all strictly equal and false otherwise
+  let strict = false;
+
+  if ((a === b) && (a === c)) {
+
+    strict = true;
+
+  }
+
+  return strict;
+
 }
 
 function smaller(){
