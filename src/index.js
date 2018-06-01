@@ -29,10 +29,16 @@ return a ** b;
 }
 
 function laxEquality(a, b){
-  // this function is passed 2 arguments
-  // return true if they are equal but not strictly equal
 
-  return (a == b)
+  let lax = false;
+  
+  if ((a == b) && (a !== b)) {
+
+    lax = true;
+
+  }
+
+  return lax;
 
 }
 
