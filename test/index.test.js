@@ -65,7 +65,7 @@ test('Exponential', () => {
   expect( result ).toEqual( 2401 );
 });
 
-test ('Lax equality ', () => {
+test('Lax equality ', () => {
   const result = laxEquality( 10, "10" );
   expect( result ).toEqual( true );
 
@@ -73,7 +73,7 @@ test ('Lax equality ', () => {
   expect( result2 ).toEqual( false );
 });
 
-test.only ('Strict equal ', () => {
+test('Strict equal ', () => {
   const result1 = strictEqual( 10, "10", 10 );
   expect( result1 ).toEqual( false );
 
@@ -87,7 +87,7 @@ test.only ('Strict equal ', () => {
   expect( result4 ).toEqual( false );
 });
 
-test('Smaller', () => {
+test.only ('Smaller', () => {
   const result1 = smaller( 7, 7 );
   expect( result1 ).toEqual( true );
 

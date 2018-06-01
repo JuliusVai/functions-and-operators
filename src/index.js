@@ -28,40 +28,14 @@ return a ** b;
 
 }
 
-function laxEquality(a, b){
+const laxEquality = (a, b) => a == b && a !== b
 
-  let lax = false;
-  
-  if ((a == b) && (a !== b)) {
+// function is passed 3 arguments
+// return true if they are all strictly equal and false otherwise
+const strictEqual = (a, b, c) => a === b && a === c
 
-    lax = true;
-
-  }
-
-  return lax;
-
-}
-
-function strictEqual(a, b, c){
-  // function is passed 3 arguments
-  // return true if they are all strictly equal and false otherwise
-  let strict = false;
-
-  if ((a === b) && (a === c)) {
-
-    strict = true;
-
-  }
-
-  return strict;
-
-}
-
-function smaller(){
-  // this function is passed 2 arguments
-  // return true if second argument is
-  // greater than or equal to first, otherwise return string 'smaller'
-}
+const smaller = (a, b) => b >= a ? true : "smaller"
+ 
 
 function isDivisibleBy(divider1, divider2, number){
   // if number is divisible by divider1 or divider2 return true or false otherwise
