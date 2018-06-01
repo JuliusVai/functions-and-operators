@@ -85,15 +85,21 @@ function mapper( myArray ){
   return newArray;
 }
 
-function wordLengths( words ){
-  // words is an array of strings
-  // return a new array that contains the number of letters in each word
-  // for example
-  // input:
-  // [ 'jupiter', 'mars', 'saturn' ]
-  // output:
-  // [ 7, 4, 6]
-}
+// words is an array of strings
+// return a new array that contains the number of letters in each word
+// for example
+// input:
+// [ 'jupiter', 'mars', 'saturn' ]
+// output:
+// [ 7, 4, 6]
+
+  function wordLengths( words ){
+
+    let newArray = words.map(item => item.length)
+  
+    return newArray;
+  
+  }
 
 function cities( capitals, formatter ){
   // capitals is an array of objects that have a city and country property
