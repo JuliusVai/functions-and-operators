@@ -101,7 +101,6 @@ function mapper( myArray ){
   
   }
 
-function cities( capitals, formatter ){
   // capitals is an array of objects that have a city and country property
   // for example
   // {
@@ -113,6 +112,22 @@ function cities( capitals, formatter ){
   // 'Paris is the capital of France'.
   // Apply formatter to each object in capitals array and
   // return an array of resulting sentences
+
+function cities( capitals, formatter ){
+
+ 
+
+
+
+
+
+
+  return capitals.map(city => formatter(city))
+
+  
+
+ 
+
 }
 
 function largerThanTen( numbers ){
