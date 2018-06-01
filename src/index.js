@@ -126,14 +126,19 @@ function cities( capitals, formatter ){
 
   
 
- 
-
+  
+  
 }
+// numbers is an array of numbers
+// return a new array that contains only numbers
+// from the input array which are greater than 10
 
 function largerThanTen( numbers ){
-  // numbers is an array of numbers
-  // return a new array that contains only numbers
-  // from the input array which are greater than 10
+
+  let newArr = numbers.filter(function(greaterThan) {
+                return greaterThan > 10
+});
+return newArr
 }
 
 function even( numbers ){
