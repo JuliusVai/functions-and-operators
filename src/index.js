@@ -115,20 +115,10 @@ function mapper( myArray ){
 
 function cities( capitals, formatter ){
 
- 
-
-
-
-
-
-
   return capitals.map(city => formatter(city))
-
-  
-
-  
   
 }
+
 // numbers is an array of numbers
 // return a new array that contains only numbers
 // from the input array which are greater than 10
@@ -141,9 +131,19 @@ function largerThanTen( numbers ){
 return newArr
 }
 
+// numbers is an array of numbers
+// return a new array that contains only even numbers from the input array
+
 function even( numbers ){
-  // numbers is an array of numbers
-  // return a new array that contains only even numbers from the input array
+
+  let newArr = numbers.filter(function(item) {
+
+    return item % 2 === 0;
+
+  });
+
+  return newArr;
+
 }
 
 function findTheNeedle( words ){
